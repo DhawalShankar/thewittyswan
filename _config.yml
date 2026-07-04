@@ -1,0 +1,21 @@
+﻿title: thewittyswan
+description: "Notes on networks, security, and literature."
+url: "https://thewittyswan.space"
+baseurl: ""
+
+markdown: kramdown
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

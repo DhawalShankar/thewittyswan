@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<section class="intro">
+  {{ content }}
+</section>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="post-list-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <span class="post-list-tag">[{{ post.categories | first }}]</span>
+  </li>
+  {% endfor %}
+</ul>
