@@ -25,6 +25,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Categories", name: "categories", widget: "hidden", default: ["netsec"] }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - label: "Body"
         name: "body"
         widget: "markdown"
@@ -39,6 +40,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Categories", name: "categories", widget: "hidden", default: ["literature"] }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - label: "Body"
         name: "body"
         widget: "markdown"
