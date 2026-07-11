@@ -5,9 +5,7 @@ backend:
   name: github
   repo: DhawalShankar/thewittyswan
   branch: main
-
-  base_url: https://thewittyswan.space
-  auth_endpoint: api/auth
+  base_url: https://thewittyswan-oauth.vercel.app
 
 local_backend: true
 
