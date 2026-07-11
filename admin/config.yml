@@ -11,9 +11,6 @@ backend:
 
 local_backend: true
 
-media_folder: "assets/img/uploads"
-public_folder: "/assets/img/uploads"
-
 media_library:
   name: cloudinary
   config:

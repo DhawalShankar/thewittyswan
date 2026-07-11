@@ -44,3 +44,9 @@ coverage/
 
 # Generated files
 .sass-cache/
+
+# Vercel
+.vercel/
+
+# Optional local env variants
+.env.local
