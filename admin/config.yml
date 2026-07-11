@@ -1,0 +1,187 @@
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+backend:
+  name: github
+  repo: DhawalShankar/thewittyswan
+  branch: main
+
+  base_url: https://thewittyswan.space
+  auth_endpoint: api/auth
+
+local_backend: true
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: daglyjaqu
+    api_key: 978665916996893
+    folder: thewittyswan/uploads
+
+collections:
+  - name: "netsec"
+    label: "Netsec"
+    folder: "_posts/netsec"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Categories", name: "categories", widget: "hidden", default: ["netsec"] }
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        buttons: ["bold", "italic", "link"]
+        editor_components: ["image"]
+
+  - name: "literature"
+    label: "Literature"
+    folder: "_posts/literature"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Categories", name: "categories", widget: "hidden", default: ["literature"] }
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        buttons: ["bold", "italic", "link"]
+        editor_components: ["image"]
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home"
+        file: "home/index.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Title", name: "title", widget: "hidden", default: "Home" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/home/" }
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            buttons: ["bold", "italic", "link"]
+            editor_components: ["image"]
+
+      - name: "now"
+        label: "Now"
+        file: "about/index.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "now" }
+          - { label: "Title", name: "title", widget: "hidden", default: "Now" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/now/" }
+          - { label: "Greeting", name: "greeting", widget: "string" }
+          - { label: "Closing line", name: "closing", widget: "string" }
+          - { label: "Photo", name: "photo", widget: "image" }
+          - { label: "Photo alt text", name: "photo_alt", widget: "string" }
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            buttons: ["bold", "italic", "link"]
+
+      - name: "projects"
+        label: "Projects"
+        file: "projects/index.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Title", name: "title", widget: "hidden", default: "Projects" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/projects/" }
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            buttons: ["bold", "italic", "link"]
+            editor_components: ["image"]
+
+      - name: "glossary-netsec"
+        label: "Glossary - Netsec"
+        file: "glossary/netsec/index.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Title", name: "title", widget: "hidden", default: "Netsec Glossary" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/glossary/netsec/" }
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            buttons: ["bold", "italic", "link"]
+            editor_components: ["image"]
+
+      - name: "glossary-literature"
+        label: "Glossary - Literature"
+        file: "glossary/literature/index.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Title", name: "title", widget: "hidden", default: "Literature Glossary" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/glossary/literature/" }
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            buttons: ["bold", "italic", "link"]
+            editor_components: ["image"]
+
+      - name: "recommends-books-netsec"
+        label: "Recommends - Books - Netsec"
+        file: "recommends/books/netsec/index.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Title", name: "title", widget: "hidden", default: "Netsec Books" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/recommends/books/netsec/" }
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            buttons: ["bold", "italic", "link"]
+            editor_components: ["image"]
+
+      - name: "recommends-books-literature"
+        label: "Recommends - Books - Literature"
+        file: "recommends/books/literature/index.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Title", name: "title", widget: "hidden", default: "Literature Books" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/recommends/books/literature/" }
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            buttons: ["bold", "italic", "link"]
+            editor_components: ["image"]
+
+      - name: "recommends-blogs"
+        label: "Recommends - Blogs"
+        file: "recommends/blogs/index.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Title", name: "title", widget: "hidden", default: "Blogs" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/recommends/blogs/" }
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            buttons: ["bold", "italic", "link"]
+            editor_components: ["image"]
+
+      - name: "recommends-videos"
+        label: "Recommends - Videos"
+        file: "recommends/videos/index.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Title", name: "title", widget: "hidden", default: "Videos" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/recommends/videos/" }
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            buttons: ["bold", "italic", "link"]
+            editor_components: ["image"]
+
+      - name: "recommends-git-repos"
+        label: "Recommends - Git Repos"
+        file: "recommends/git-repos/index.md"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+          - { label: "Title", name: "title", widget: "hidden", default: "Git Repos" }
+          - { label: "Permalink", name: "permalink", widget: "hidden", default: "/recommends/git-repos/" }
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            buttons: ["bold", "italic", "link"]
+            editor_components: ["image"]

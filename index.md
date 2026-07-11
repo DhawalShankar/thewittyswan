@@ -1,6 +1,4 @@
 ---
-layout: home
+layout: fork
 title: thewittyswan
 ---
-
-Notes on networks, security, and literature.

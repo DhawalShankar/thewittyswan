@@ -18,9 +18,15 @@
       <span>thewittyswan</span>
     </a>
     <nav>
-      <a href="{{ "/security/" | relative_url }}">security</a>
+      <a href="{{ "/home/" | relative_url }}">home</a>
+      <a href="{{ "/netsec/" | relative_url }}">netsec</a>
+      <a href="{{ "/projects/" | relative_url }}">projects</a>
       <a href="{{ "/literature/" | relative_url }}">literature</a>
-      <a href="{{ "/about/" | relative_url }}">about</a>
+      <a href="{{ "/glossary/" | relative_url }}">glossary</a>
+      <a href="{{ "/recommends/" | relative_url }}">recommends</a>
+      <a href="{{ "/now/" | relative_url }}">now</a>
+      
+
       <a href="{{ "/feed.xml" | relative_url }}">rss</a>
     </nav>
   </header>
@@ -28,6 +34,11 @@
     {{ content }}
   </main>
   <footer class="site-footer">
+    <div class="footer-links">
+      <a href="https://github.com/DhawalShankar" target="_blank" rel="noopener">github</a>
+      <a href="mailto:work.dshukla@gmail.com">email</a>
+      <a href="https://drive.google.com/file/d/1zodZ1AqMNmWbzGSzmJerYLQGAHMEUwTa/view?usp=drive_link" target="_blank" rel="noopener">resume</a>
+    </div>
     <p>&copy; {{ site.time | date: "%Y" }} thewittyswan</p>
   </footer>
 </body>

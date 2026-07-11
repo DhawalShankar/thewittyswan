@@ -10,7 +10,13 @@
 
 * { box-sizing: border-box; }
 
+html, body {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   background: var(--bg);
   color: var(--text);
@@ -26,16 +32,32 @@ a:hover { text-decoration-color: var(--text); }
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 0.75rem;
   padding: 2rem 1.5rem;
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-weight: 600; }
-.logo img { height: 28px; width: 28px; }
-.site-header nav a { margin-left: 1.25rem; font-size: 0.95rem; }
+.logo img { height: 56px; width: 56px; }
 
-main { max-width: 720px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+  justify-content: flex-end;
+}
+.site-header nav a { font-size: 0.95rem; }
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+  flex: 1;
+  width: 100%;
+}
 
 .post-list { list-style: none; padding: 0; }
 .post-list li { display: flex; gap: 0.75rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); }
@@ -46,3 +68,162 @@ main { max-width: 720px; margin: 0 auto; padding: 0 1.5rem 4rem; }
 .post-meta { color: var(--text-muted); font-size: 0.9rem; }
 
 .site-footer { text-align: center; color: var(--text-muted); font-size: 0.85rem; padding: 2rem 0; }
+
+.fork {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+
+.fork-choice {
+  padding: 0.9rem 1.8rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+.fork-choice:hover { background: var(--border); }
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.now-layout {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.now-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.now-photo {
+  display: block;
+  width: 180px;
+  flex-shrink: 0;
+  border: 2px solid var(--text);
+  border-radius: 4px;
+  padding: 8px;
+  background: #fff;
+  box-shadow: 4px 4px 0 var(--border);
+}
+
+@media (max-width: 640px) {
+  .now-layout {
+    flex-direction: column;
+  }
+  .now-photo {
+    width: 140px;
+  }
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--border);
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+.now-text h1 {
+  margin-bottom: 1.75rem;
+  letter-spacing: 0.01em;
+}
+
+.now-text p {
+  margin: 0 0 1.25rem;
+}
+
+.now-lede {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem !important;
+}
+
+.now-closing {
+  margin-top: 2rem !important;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-style: italic;
+  color: var(--text-muted);
+}
+.fork-body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.fork-logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+}
+.fork-logo img { height: 44px; width: 44px; }
+
+.split-screen {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.split-half {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  transition: flex 0.4s ease;
+}
+
+.split-blur {
+  position: absolute;
+  inset: -20%;
+  filter: blur(60px);
+  opacity: 0.55;
+  transition: opacity 0.4s ease;
+}
+
+.split-dev .split-blur {
+  background: radial-gradient(circle at 30% 30%, #cfd6e0, transparent 60%),
+              radial-gradient(circle at 70% 70%, #a9b6c9, transparent 60%);
+}
+
+.split-human .split-blur {
+  background: radial-gradient(circle at 30% 30%, #e7d9c4, transparent 60%),
+              radial-gradient(circle at 70% 70%, #e0c9a6, transparent 60%);
+}
+
+.split-half:hover { flex: 1.15; }
+.split-half:hover .split-blur { opacity: 0.8; }
+
+.split-label {
+  position: relative;
+  z-index: 2;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.split-dev { border-right: 1px solid var(--border); }
+
+@media (max-width: 640px) {
+  .split-screen { flex-direction: column; }
+  .split-dev { border-right: none; border-bottom: 1px solid var(--border); }
+  .split-label { font-size: 1.7rem; }
+}
