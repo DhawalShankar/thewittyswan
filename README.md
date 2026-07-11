@@ -1,0 +1,81 @@
+# thewittyswan
+
+The witty swan carries knowledge forward — a personal site combining
+network security writing, literature, and a bit of playful engineering.
+Live at [thewittyswan.space](https://thewittyswan.space).
+
+Built by **Dhawal**.
+
+## Why this stack
+
+I'm a backend person at heart. Databases, APIs, servers — that's where
+my head naturally goes. Frontend work, especially the modern
+React/Next.js/Tailwind kind, has never been where I want to spend my
+time — not because I dislike design, but because designing *in code*
+feels heavy to me. I actually enjoy design a lot, just visually — Canva,
+Figma, moving things around and seeing them change instantly. Writing
+`className="flex items-center justify-between px-4"` to get the same
+result has never felt like the same activity to me.
+
+So this site is built the way it is on purpose: Jekyll, plain
+Markdown, one CSS file, no build tooling to fight with, no component
+tree to maintain. I write in Markdown the way I'd write a note, and the
+design work — once done — stays done. No repeated frontend decisions
+per post, no framework churn to keep up with. Boring, on purpose, and
+genuinely comfortable to maintain for someone who'd rather be thinking
+about the backend of things.
+
+## Stack
+
+- **Jekyll** — static site generator, Markdown-based, no server or
+  database at runtime
+- **Decap CMS** — browser-based admin panel at `/admin`, writes directly
+  to this GitHub repo
+- **Cloudinary** — image hosting for blog post images
+- **Vercel** — hosting, auto-deploys on push to `main`
+- **daresaydigital/decap-cms-oauth** — separate small Vercel project
+  handling GitHub OAuth for the admin panel
+
+This is one of two repos. The other, `thewittyswan-terminal`, is a
+Go-based interactive terminal at `/terminal`, self-hosted separately on a
+GCP VM. The two are independent — this site works standalone even if the
+terminal is down.
+
+## Local setup
+
+```powershell
+git clone https://github.com/DhawalShankar/thewittyswan.git
+cd thewittyswan
+bundle install
+bundle exec jekyll serve
+```
+
+Visit `http://127.0.0.1:4000`.
+
+For the admin panel locally, also run (in a separate terminal):
+```powershell
+npx decap-server
+```
+Then visit `http://127.0.0.1:4000/admin/` — this uses Decap's local
+backend mode, no OAuth needed for local testing.
+
+## Structure
+
+- `_posts/netsec/`, `_posts/literature/` — blog posts, edited via `/admin`
+  or directly as Markdown
+- `home/`, `about/` (→ `/now/`), `projects/`, `glossary/`, `recommends/`
+  — structural pages, editable via `/admin`
+- `index.md` — the landing fork ("I'm a dev" / "I'm a homo sapien"),
+  intentionally **not** editable via the CMS
+- `posts.json` — auto-generated feed of all posts, consumed by the
+  terminal repo for its `ls`/`cat`/`grep` commands
+- `assets/css/main.scss` — all site styling, single file
+- `admin/config.yml` — Decap CMS configuration
+
+## Deployment
+
+Pushing to `main` auto-deploys via Vercel. No manual build step needed.
+
+## License
+
+Personal project, all rights reserved.
