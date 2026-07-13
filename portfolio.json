@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "website": "https://thewittyswan.space",
+    "terminal": "https://thewittyswan.space/terminal",
+    "portfolio_version": "1.0",
+    "last_updated": "2026-07-13",
+    "resume_version": "2026.1"
+  },
+  "profile": {
+    "name": "Dhawal Shukla",
+    "tagline": [
+      "Backend Engineering",
+      "Network Security",
+      "Cloud"
+    ],
+    "education_short": "B.Tech, Electronics & Communication Engineering • JIIT Noida (2023–2027)",
+    "location": "Kanpur, Uttar Pradesh, India",
+    "summary": "Backend engineer building secure backend systems, cloud-native applications and developer tooling. Experienced with Node.js, Python, REST APIs, WebSockets, JWT/OAuth 2.0, Docker, MongoDB, PostgreSQL and AI integrations. Passionate about backend infrastructure, system design and continuously advancing towards Network Security engineering."
+  },
+  "contact": {
+    "email": "dhawalmannu@gmail.com",
+    "phone": "+91 7376521772",
+    "location": "Kanpur, Uttar Pradesh, India"
+  },
+  "profiles": {
+    "github": {
+      "username": "DhawalShankar",
+      "url": "https://github.com/DhawalShankar"
+    },
+    "linkedin": {
+      "username": "dhawalshukl",
+      "url": "https://www.linkedin.com/in/dhawalshukl/"
+    },
+    "leetcode": {
+      "username": "dhawalshankar",
+      "url": "https://leetcode.com/u/dhawalshankar/"
+    }
+  },
+  "resume": {
+    "summary": "Backend engineer specialising in Node.js and Python ecosystems with experience building production REST APIs, authentication systems, AI-powered pipelines, Dockerised services, distributed backend systems and cloud-native deployments. Skilled in secure backend architecture using JWT, OAuth 2.0, RBAC, MongoDB, PostgreSQL and modern DevOps workflows.",
+    "pdf_url": "https://drive.google.com/file/d/1zodZ1AqMNmWbzGSzmJerYLQGAHMEUwTa/view?usp=sharing"
+  },
+  "education": [
+    {
+      "degree": "B.Tech in Electronics & Communication Engineering",
+      "institute": "Jaypee Institute of Information Technology, Noida",
+      "duration": "2023 – 2027",
+      "details": "CGPA: 7.37 / 10"
+    },
+    {
+      "degree": "ISC (Class XII)",
+      "institute": "Council for the Indian School Certificate Examinations",
+      "duration": "2023",
+      "details": "92.25%"
+    }
+  ],
+  "experience": [
+    {
+      "role": "IT Operations Support Intern",
+      "company": "Cape Comorin Children School",
+      "duration": "Jun 2026 – Present",
+      "description": "Built capecomorinschool.com using Next.js and Flask while integrating Vritukul, a FastAPI student-record management platform. Developed Gemini-powered OCR pipelines, RapidFuzz search, PostgreSQL, Turso, Firebase Authentication, RBAC and Cloudinary integrations."
+    },
+    {
+      "role": "Backend Developer Intern",
+      "company": "Codingo Forge",
+      "duration": "Apr 2026 – Jun 2026",
+      "description": "Developed production-grade Node.js and Express REST APIs, integrated Clerk Authentication, RBAC, Docker containerisation and MongoDB-backed backend services."
+    }
+  ],
+  "projects": [
+    {
+      "name": "VartaLang",
+      "description": "Language Exchange to Career Platform featuring real-time messaging, Google OAuth, JWT authentication, room-based Socket.io communication, CRON automation and multilingual matching.",
+      "stack": [
+        "Next.js",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Socket.io",
+        "JWT",
+        "OAuth 2.0",
+        "Render"
+      ],
+      "link": "https://vartalang.in",
+      "github": ""
+    },
+    {
+      "name": "Cosmo India Prakashan",
+      "description": "AI-powered publishing and e-commerce platform for my family's publishing house. Built secure payments with Razorpay + HMAC-SHA256, MongoDB + PostgreSQL architecture, AI inventory management and RBAC administration. This was my first production backend project and marked the beginning of my backend engineering journey in 2025.",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Supabase",
+        "PostgreSQL",
+        "JWT",
+        "Gemini API",
+        "Razorpay",
+        "Render",
+        "Vercel"
+      ],
+      "link": "https://cosmoindiaprakashan.in",
+      "github": ""
+    },
+    {
+      "name": "Cape Comorin School ERP",
+      "description": "Digitisation platform modernising a school established in 1984. Includes AI-powered OCR, student records management, notices, teacher portal, fee management and administration dashboard.",
+      "stack": [
+        "Next.js",
+        "Flask",
+        "FastAPI",
+        "Gemini API",
+        "RapidFuzz",
+        "Neon PostgreSQL",
+        "Turso",
+        "Firebase",
+        "Cloudinary"
+      ],
+      "link": "https://capecomorinschool.com",
+      "github": ""
+    },
+    {
+      "name": "AuralAce",
+      "description": "Audio signal processing platform implementing FFT equalisation, convolution reverb, waveform visualisation and FastAPI-powered audio processing.",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "NumPy",
+        "SciPy",
+        "librosa",
+        "Next.js"
+      ],
+      "link": "https://auralace.vercel.app",
+      "github": ""
+    }
+  ],
+  "skills": [
+    "Node.js",
+    "Express.js",
+    "Python",
+    "FastAPI",
+    "Django",
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "REST APIs",
+    "System Design",
+    "WebSockets (Socket.io)",
+    "CRON Jobs",
+    "MongoDB",
+    "PostgreSQL",
+    "Supabase",
+    "Neon",
+    "Turso (LibSQL)",
+    "Firebase",
+    "JWT",
+    "OAuth 2.0",
+    "RBAC",
+    "Docker",
+    "Git",
+    "GitHub",
+    "Linux",
+    "Render",
+    "Vercel",
+    "Gemini API",
+    "RapidFuzz",
+    "Cloudinary",
+    "Razorpay",
+    "HMAC-SHA256",
+    "Nodemailer",
+    "Postman"
+  ],
+  "timeline": [
+    {
+      "date": "2023",
+      "event": "Started B.Tech in Electronics & Communication Engineering at JIIT Noida."
+    },
+    {
+      "date": "2024",
+      "event": "Earned UAV Pilot Certification from C-DAC Noida."
+    },
+    {
+      "date": "2025",
+      "event": "Started learning Backend Engineering."
+    },
+    {
+      "date": "2025",
+      "event": "Launched Cosmo India Prakashan, the first production platform for my family's publishing house."
+    },
+    {
+      "date": "2026",
+      "event": "Joined Codingo Forge as Backend Developer Intern."
+    },
+    {
+      "date": "2026",
+      "event": "Joined Cape Comorin Children School as IT Operations Support Intern."
+    },
+    {
+      "date": "2026",
+      "event": "Built VartaLang language exchange platform."
+    },
+    {
+      "date": "2026",
+      "event": "Google BigCode Top 1500."
+    },
+    {
+      "date": "2026",
+      "event": "HackVega 2.0 Finalist."
+    },
+    {
+      "date": "2026",
+      "event": "Reached a peak LeetCode rating of 1617."
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Google BigCode",
+      "description": "Ranked among the Top 1500 participants globally.",
+      "year": "2026"
+    },
+    {
+      "title": "HackVega 2.0",
+      "description": "Reached the Final Round (Round 3).",
+      "year": "2026"
+    },
+    {
+      "title": "LeetCode",
+      "description": "Peak rating of 1617 and earned the 50 Days Badge.",
+      "year": "2026"
+    },
+    {
+      "title": "UAV Pilot Certification",
+      "description": "Certified UAV Pilot by C-DAC, Noida.",
+      "year": "2024"
+    }
+  ]
+}
