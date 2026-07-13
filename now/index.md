@@ -4,7 +4,7 @@ title: Now
 permalink: /now/
 greeting: "Namaste! I am Dhawal."
 closing: "Hope you find yours too! Happy balancing!"
-photo: /assets/img/dhawal.jpeg
+photo: /assets/img/dhawal.jpg
 photo_alt: Dhawal
 ---
 
