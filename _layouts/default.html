@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | relative_url }}">
-  <link rel="icon" href="{{ "/assets/img/thewittyswan.png" | relative_url }}">
+  <link rel="stylesheet" href="{{ " /assets/css/main.css" | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml" | relative_url }}">
+  <link rel="icon" href="{{ " /assets/img/thewittyswan.png" | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <header class="site-header">
-    <a class="logo" href="{{ "/" | relative_url }}">
-      <img src="{{ "/assets/img/thewittyswan.png" | relative_url }}" alt="thewittyswan">
+    <a class="logo" href="{{ " /" | relative_url }}">
+      <img src="{{ " /assets/img/thewittyswan.png" | relative_url }}" alt="thewittyswan">
       <span>thewittyswan</span>
     </a>
     <nav>
-      <a href="{{ "/home/" | relative_url }}">home</a>
-      <a href="{{ "/netsec/" | relative_url }}">netsec</a>
-      <a href="{{ "/projects/" | relative_url }}">projects</a>
-      <a href="{{ "/literature/" | relative_url }}">literature</a>
-      <a href="{{ "/glossary/" | relative_url }}">glossary</a>
-      <a href="{{ "/recommends/" | relative_url }}">recommends</a>
-      <a href="{{ "/now/" | relative_url }}">now</a>
-      
+      <a href="{{ " /home/" | relative_url }}">home</a>
+      <a href="{{ " /netsec/" | relative_url }}">netsec</a>
+      <a href="{{ " /projects/" | relative_url }}">projects</a>
+      <a href="{{ " /literature/" | relative_url }}">literature</a>
+      <a href="{{ " /glossary/" | relative_url }}">glossary</a>
+      <a href="{{ " /recommends/" | relative_url }}">recommends</a>
+      <a href="{{ " /now/" | relative_url }}">now</a>
 
-      <a href="{{ "/feed.xml" | relative_url }}">rss</a>
+
+      <a href="{{ " /feed.xml" | relative_url }}">rss</a>
     </nav>
   </header>
   <main>
@@ -37,9 +41,15 @@
     <div class="footer-links">
       <a href="https://github.com/DhawalShankar" target="_blank" rel="noopener">github</a>
       <a href="mailto:work.dshukla@gmail.com">email</a>
-      <a href="https://drive.google.com/file/d/1zodZ1AqMNmWbzGSzmJerYLQGAHMEUwTa/view?usp=drive_link" target="_blank" rel="noopener">resume</a>
+      <a href="https://drive.google.com/file/d/1zodZ1AqMNmWbzGSzmJerYLQGAHMEUwTa/view?usp=drive_link" target="_blank"
+        rel="noopener">resume</a>
     </div>
     <p>&copy; {{ site.time | date: "%Y" }} thewittyswan</p>
+    <p style="font-family: 'Fraunces', serif; font-style: italic; font-size: 1.1rem; margin-top: 0.5rem;">
+      <a href="https://drive.google.com/file/d/1zodZ1AqMNmWbzGSzmJerYLQGAHMEUwTa/view?usp=drive_link" target="_blank"
+        rel="noopener" style="color: inherit; text-decoration: none; border-bottom: 1px dashed;">Dhawal Shukla</a>
+    </p>
   </footer>
 </body>
+
 </html>

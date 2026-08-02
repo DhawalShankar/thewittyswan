@@ -2,8 +2,8 @@
   "meta": {
     "website": "https://thewittyswan.space",
     "terminal": "https://thewittyswan.space/terminal",
-    "portfolio_version": "1.0",
-    "last_updated": "2026-07-13",
+    "portfolio_version": "1.1",
+    "last_updated": "2026-08-02",
     "resume_version": "2026.1"
   },
   "profile": {
@@ -15,7 +15,7 @@
     ],
     "education_short": "B.Tech, Electronics & Communication Engineering • JIIT Noida (2023–2027)",
     "location": "Kanpur, Uttar Pradesh, India",
-    "summary": "Backend engineer building secure backend systems, cloud-native applications and developer tooling. Experienced with Node.js, Python, REST APIs, WebSockets, JWT/OAuth 2.0, Docker, MongoDB, PostgreSQL and AI integrations. Passionate about backend infrastructure, system design and continuously advancing towards Network Security engineering."
+    "summary": "Backend engineer building secure backend systems, cloud-native applications and developer tooling. Experienced with Node.js, Python, Go, REST APIs, WebSockets, JWT/OAuth 2.0, Docker, MongoDB, PostgreSQL and AI integrations. Passionate about backend infrastructure, system design and continuously advancing towards Network Security engineering."
   },
   "contact": {
     "email": "dhawalmannu@gmail.com",
@@ -37,7 +37,7 @@
     }
   },
   "resume": {
-    "summary": "Backend engineer specialising in Node.js and Python ecosystems with experience building production REST APIs, authentication systems, AI-powered pipelines, Dockerised services, distributed backend systems and cloud-native deployments. Skilled in secure backend architecture using JWT, OAuth 2.0, RBAC, MongoDB, PostgreSQL and modern DevOps workflows.",
+    "summary": "Backend engineer specialising in Node.js, Python and Go ecosystems with experience shipping production platforms: real-time messaging, payment processing, polyglot database architectures and AI-driven data pipelines. Skilled in secure backend architecture using JWT, OAuth 2.0, RBAC, MongoDB, PostgreSQL, Docker and self-hosted Linux/cloud infrastructure.",
     "pdf_url": "https://drive.google.com/file/d/1zodZ1AqMNmWbzGSzmJerYLQGAHMEUwTa/view?usp=sharing"
   },
   "education": [
@@ -58,17 +58,31 @@
     {
       "role": "IT Operations Support Intern",
       "company": "Cape Comorin Children School",
-      "duration": "Jun 2026 – Present",
-      "description": "Built capecomorinschool.com using Next.js and Flask while integrating Vritukul, a FastAPI student-record management platform. Developed Gemini-powered OCR pipelines, RapidFuzz search, PostgreSQL, Turso, Firebase Authentication, RBAC and Cloudinary integrations."
+      "duration": "Jun 2026 – Jul 2026",
+      "description": "Engineered capecomorinschool.com using Next.js and Flask, integrating Vritukul (a FastAPI service with a Gemini multimodal pipeline), reducing student and admission record lookup time from hours to 30 seconds using RapidFuzz fuzzy name matching. Implemented Firebase JWT authentication and RBAC across admin panels used by 10+ school staff, with data storage across Turso, Neon PostgreSQL and Cloudinary."
     },
     {
       "role": "Backend Developer Intern",
       "company": "Codingo Forge",
       "duration": "Apr 2026 – Jun 2026",
-      "description": "Developed production-grade Node.js and Express REST APIs, integrated Clerk Authentication, RBAC, Docker containerisation and MongoDB-backed backend services."
+      "description": "Collaborated with a 3-engineer backend team to containerize services with Docker and configure Clerk authentication with RBAC for employees, users and a super admin role. Designed and implemented REST APIs using Node.js and Express.js, backed by MongoDB."
     }
   ],
   "projects": [
+    {
+      "name": "thewittyswan Terminal",
+      "description": "Self-hosted, browser-based developer terminal built with a Go backend and xterm.js frontend, running on a GCP e2-micro VM behind a Caddy reverse proxy under systemd. Includes a live network security lab (TLS inspection, DNS diagnostics, HTTP security header auditing, port reachability checks, and OSV.dev-backed dependency vulnerability lookups), all guarded against SSRF via strict host/IP validation on every outbound check.",
+      "stack": [
+        "Go",
+        "xterm.js",
+        "GCP Compute Engine",
+        "Caddy",
+        "systemd",
+        "OSV.dev API"
+      ],
+      "link": "https://thewittyswan.space/terminal",
+      "github": ""
+    },
     {
       "name": "VartaLang",
       "description": "Language Exchange to Career Platform featuring real-time messaging, Google OAuth, JWT authentication, room-based Socket.io communication, CRON automation and multilingual matching.",
@@ -123,6 +137,30 @@
       "github": ""
     },
     {
+      "name": "Churn",
+      "description": "CLI tool (published on PyPI as churn-cli) that mines git log history for high-churn files and uses the Gemini API to auto-generate leveled interview Q&A in Markdown or JSON, with configurable scope. Averaging 300 downloads/month.",
+      "stack": [
+        "Python",
+        "Gemini API",
+        "PyPI"
+      ],
+      "link": "https://pypi.org/project/churn-cli/",
+      "github": ""
+    },
+    {
+      "name": "ElectiveXchange",
+      "description": "Identified a recurring problem with classmates struggling to swap electives each semester and independently built a two-way matcher with priority-ranked preferences and real-time updates. Grew to 300+ organic signups.",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Firebase Auth",
+        "Firestore",
+        "Vercel"
+      ],
+      "link": "",
+      "github": ""
+    },
+    {
       "name": "AuralAce",
       "description": "Audio signal processing platform implementing FFT equalisation, convolution reverb, waveform visualisation and FastAPI-powered audio processing.",
       "stack": [
@@ -141,6 +179,7 @@
     "Node.js",
     "Express.js",
     "Python",
+    "Go",
     "FastAPI",
     "Django",
     "Java",
@@ -150,6 +189,7 @@
     "System Design",
     "WebSockets (Socket.io)",
     "CRON Jobs",
+    "Microservices",
     "MongoDB",
     "PostgreSQL",
     "Supabase",
@@ -159,17 +199,22 @@
     "JWT",
     "OAuth 2.0",
     "RBAC",
+    "Clerk",
+    "HMAC-SHA256",
     "Docker",
     "Git",
     "GitHub",
     "Linux",
+    "Caddy",
+    "systemd",
+    "GCP Compute Engine",
     "Render",
     "Vercel",
+    "CI/CD",
     "Gemini API",
     "RapidFuzz",
     "Cloudinary",
     "Razorpay",
-    "HMAC-SHA256",
     "Nodemailer",
     "Postman"
   ],
@@ -192,6 +237,14 @@
     },
     {
       "date": "2026",
+      "event": "Built ElectiveXchange, growing to 300+ organic signups."
+    },
+    {
+      "date": "2026",
+      "event": "Published Churn (churn-cli) on PyPI."
+    },
+    {
+      "date": "2026",
       "event": "Joined Codingo Forge as Backend Developer Intern."
     },
     {
@@ -201,6 +254,10 @@
     {
       "date": "2026",
       "event": "Built VartaLang language exchange platform."
+    },
+    {
+      "date": "2026",
+      "event": "Built thewittyswan Terminal — self-hosted Go + xterm.js developer terminal with a live network security lab."
     },
     {
       "date": "2026",
@@ -232,7 +289,7 @@
       "year": "2026"
     },
     {
-      "title": "UAV Pilot Certification",
+      "title": "UAV Bootcamp Certification",
       "description": "Certified UAV Pilot by C-DAC, Noida.",
       "year": "2024"
     }
