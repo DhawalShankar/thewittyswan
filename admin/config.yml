@@ -24,6 +24,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss Z", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
       - { label: "Categories", name: "categories", widget: "hidden", default: ["netsec"] }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - label: "Body"
@@ -39,6 +40,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss Z", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
       - { label: "Categories", name: "categories", widget: "hidden", default: ["literature"] }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - label: "Body"
