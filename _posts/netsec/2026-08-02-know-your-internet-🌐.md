@@ -1,5 +1,6 @@
 ---
 title: Know Your Internet!🌐
+date: 2026-08-02 22:13:00 +05:30
 categories:
   - netsec
 layout: post
@@ -51,7 +52,7 @@ Small experiments like these are how "knowing your internet" turns into actually
 
 One last thing before I fly off. If you're on your hostel or college wifi and it's secured by your administrator, don't try to log in unless you're an approved member. Your screen might look something like this:
 
-<img src="https://res.cloudinary.com/daglyjaqu/image/upload/v1785675010/Screenshot_2026-08-02_151331_cs0vss.png" alt="router_interface" width="600" />
+<img src="https://res.cloudinary.com/daglyjaqu/image/upload/v1785675010/Screenshot_2026-08-02_151331_cs0vss.png" alt="router_interface" style="max-width: 100%; height: auto;" />
 
 That login wall isn't an invitation, it's a boundary. Respect it.
 
