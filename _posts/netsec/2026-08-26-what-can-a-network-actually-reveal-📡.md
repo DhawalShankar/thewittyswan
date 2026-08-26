@@ -1,5 +1,5 @@
 ---
-title: What Can a Network Actually Reveal? 📡
+title: I Watched a File Travel Across My Network 🦈
 date: 2026-08-26 23:00:00 +05:30
 categories:
   - netsec
