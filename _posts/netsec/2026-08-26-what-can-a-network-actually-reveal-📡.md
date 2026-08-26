@@ -222,7 +222,7 @@ Wireshark provides:
 
 When HTTP traffic contains a transferred file, Wireshark can sometimes reconstruct and export that object.
 
-![Wireshark-Interface](https://res.cloudinary.com/daglyjaqu/image/upload/v1787765806/Screenshot_2026-08-26_222312_xkxqc7.png "TCP Packets Captured")
+<img src="https://res.cloudinary.com/daglyjaqu/image/upload/v1787765806/Screenshot_2026-08-26_222312_xkxqc7.png" alt="Wireshark-Interface" style="max-width: 100%; height: auto;" />
 
 So conceptually:
 
