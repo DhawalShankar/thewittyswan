@@ -99,11 +99,11 @@ And then, he left us with a truth that was as simple as it was heavy—a baselin
 
 > "To become a writer, what you need is to never let your love for writing die."
 
-<img 
+<img
   src="https://res.cloudinary.com/daglyjaqu/image/upload/v1789931030/WhatsApp_Image_2026-09-20_at_10.15.18_PM_l4w0gn.jpg"
   alt="Kitaab discussion with Anurag Minus Verma"
-  style="display:block; width:100%; max-width:900px; height:auto; margin:2rem auto;"
->
+  width="500"
+/>
 
 - - -
 
