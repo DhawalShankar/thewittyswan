@@ -37,7 +37,7 @@ After a long time, I realized that writing heals and I joined several book clubs
 
 After understanding all of these aspects of literature, I became curious. I started finding sources of positivity that empowered the community of literature and I found it exists in the authenticity of your thoughts. It includes working passionately on your present and developing a disciplined lifestyle.
 
-AI stops you from doing anything passionately and focuses on completing the task quick, irrespective of the quality of your work. This is the reason I have decided, taking lessons from my aforementioned experiences that I will not use AI on any my blogs from now onwards. \
+AI stops you from doing anything passionately and focuses on completing the task quick, irrespective of the quality of your work. This is the reason I have decided, taking lessons from my aforementioned experiences that I will not use AI on any of my blogs from now onwards. \
 \
 Before going away, I would like to announce that I have regained my self consciousness and now I know how AI systems hijack our human intelligence. I 'm myself working on an AI based startup these days called vartalang.in and it has been selected for Sarvam Startup program. 
 
